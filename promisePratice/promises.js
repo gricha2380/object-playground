@@ -1,21 +1,21 @@
-/// Code promises from Jon
+/// PROMISES PRACTICE FROM JON
 
+// object holding promise. type = function
 const getUser = id => {
     return new Promise((resolve, reject) => {
-      let theData = {
-        id : 10,
-        name : "Jon"
-      };
-  
-  
-      setTimeout(() => {
-  
-        resolve(theData);
-  
-      }, 500);
-  
+        // promise contains an object. that's what we really want
+        let theData = {
+            id : 10,
+            name : "Jon"
+        };
+    
+        // contrived example
+        setTimeout(() => {
+            resolve(theData);
+        }, 500);
+
     });
-  }
+}
   
   const getData = user => {
     return new Promise((resolve, reject) => {
